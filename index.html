@@ -75,30 +75,31 @@
     }
 
     .notice {
-      color:tomato;
+      color: tomato;
     }
-    .navbar-inverse{
+
+    .navbar-inverse {
       transition: 0.3s;
-      background:blueviolet !important;
+      background: blueviolet !important;
     }
-    .well{
+
+    .well {
       background: indigo !important;
       border: solid indigo !important;
       color: white;
     }
-    .jumbotron{
+
+    .jumbotron {
       background: indigo !important;
       border: solid indigo !important;
-      color:white;
+      color: white;
     }
-    .btn{
+
+    .btn {
       background: gainsboro !important;
       border: solid gainsboro !important;
       color: black;
     }
-   
-
-
   </style>
 </head>
 
@@ -131,7 +132,9 @@
           <form class="navbar-form navbar-left">
           </form>
           <ul class="nav navbar-nav navbar-right">
-            <li><div id="time"></div></li>
+            <li>
+              <div id="time"></div>
+            </li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -148,25 +151,25 @@
   </div>
   <div class="container">
     <h2>Finished Projects</h2>
-      <div class="thumbnail col-sm-4">
-        <img src="https://codepen.io/ethannorman/pen/wexBOv/image/large.png" alt="TvSrc" />
-        <div class="caption">
-          <a href="https://codepen.io/ethannorman/full/wexBOv/" class="btn btn-success width-go-to1" role="button">Go To</a>
-        </div>
-      </div>
-      <div class="thumbnail col-sm-4">
-        <img src="https://codepen.io/ethannorman/pen/BdJvMb/image/large.png" alt="Quote Gen" />
-        <div class="caption">
-          <a href="https://codepen.io/ethannorman/full/BdJvMb/" class="btn btn-success width-go-to1" role="button">Go To</a>
-        </div>
-      </div>
-      <div class="thumbnail col-sm-4">
-        <img src="https://codepen.io/ethannorman/pen/gxzQWN/image/large.png" alt="weather app" />
-        <div class="caption">
-          <a href="https://codepen.io/ethannorman/full/gxzQWN/" class="btn btn-success width-go-to1" role="button">Go To</a>
-        </div>
+    <div class="thumbnail col-sm-4">
+      <img src="https://codepen.io/ethannorman/pen/wexBOv/image/large.png" alt="TvSrc" />
+      <div class="caption">
+        <a href="https://codepen.io/ethannorman/full/wexBOv/" class="btn btn-success width-go-to1" role="button">Go To</a>
       </div>
     </div>
+    <div class="thumbnail col-sm-4">
+      <img src="https://codepen.io/ethannorman/pen/BdJvMb/image/large.png" alt="Quote Gen" />
+      <div class="caption">
+        <a href="https://codepen.io/ethannorman/full/BdJvMb/" class="btn btn-success width-go-to1" role="button">Go To</a>
+      </div>
+    </div>
+    <div class="thumbnail col-sm-4">
+      <img src="https://codepen.io/ethannorman/pen/gxzQWN/image/large.png" alt="weather app" />
+      <div class="caption">
+        <a href="https://codepen.io/ethannorman/full/gxzQWN/" class="btn btn-success width-go-to1" role="button">Go To</a>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <h2 id="about">
       Video Games
@@ -229,9 +232,15 @@
     <div class="well">
       <p>Here are some educational programs:</p>
       <ul>
-        <li><a href="https://www.abileneisd.org/Domain/4658" class="btn btn-success btun" role="button">Teams</a></li>
-        <li><a href="https://www.freecodecamp.org/signin" class="btn btn-success btun" role="button">Free Code Camp</a></li>
-        <li><a href="https://ple.platoweb.com/Account/SignIn" class="btn btn-success btun" role="button">Plato</a></li>
+        <div>
+          <li><a href="http://www.abileneisd.org/Domain/4658" class="btn btn-success btun" role="button">Teams</a></li>
+        </div>
+        <div>
+          <li><a href="https://www.freecodecamp.org/signin" class="btn btn-success btun" role="button">Free Code Camp</a></li>
+        </div>
+        <div>
+          <li><a href="https://ple.platoweb.com/Account/SignIn" class="btn btn-success btun" role="button">Plato</a></li>
+        </div>
       </ul>
     </div>
   </div>
@@ -252,7 +261,7 @@
         own. Design your own way and your own content.</p>
     </div>
   </div>
-  
+
 
   <!-- jQuery ref (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
