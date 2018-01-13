@@ -21,13 +21,16 @@
 
   <!-- Css -->
   <style>
-   .img2{
-  border: 1px solid black;
-    background:url("https://public-media.smithsonianmag.com/filer/78/93/7893029e-19ca-490a-a698-98ec804c7b97/istock-831508784.jpg");
-    width: 100%;
-    height: auto;
-    padding:15px;
-
+    .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+   .container {
+    position: relative;
+    text-align: center;
+    color: white;
 }
     .border {
       border-radius: 100px;
@@ -188,10 +191,9 @@ background: silver !important;
       <!-- /.container-fluid -->
     </nav>
   </div>
- <div class="img2">
-<h2>Lorem Ipsum Dolor</h2>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+ <div class="container">
+<img src="https://public-media.smithsonianmag.com/filer/78/93/7893029e-19ca-490a-a698-98ec804c7b97/istock-831508784.jpg">
+<div class="centered">Hello World!</div>
 </div>
 
 
