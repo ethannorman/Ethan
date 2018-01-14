@@ -211,7 +211,6 @@ background: silver !important;
           </form>
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a id="time"></a>
             </li>
           </ul>
         </div>
@@ -234,27 +233,7 @@ background: silver !important;
 </body>
 <!-- Java Script & JQuery -->
 <script>
-  $(document).ready(function () {
-
-    function getTime() {
-      var d = new Date;
-      var hours = d.getHours();
-      var mins = d.getMinutes();
-      if (hours > 12) {
-        var hour = (hours - 12);
-        var ampm = "PM";
-      }
-      else {
-        var hour = hours;
-        var ampm = "AM";
-      }
-      return hour + ":" + mins + ampm;
-    }
-    setInterval(function () {
-      $("#time").html(getTime())
-    }, 500);
-
-  });
+ 
   /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
