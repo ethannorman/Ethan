@@ -18,45 +18,48 @@
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
     crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <!-- Css -->
   <style>
- .pagenav{
+    .pagenav {
       position: fixed;
       text-align: center;
-
-
     }
-    .Ethan{
+
+    .Ethan {
       border-radius: 100px;
       height: 25px;
       cursor: pointer;
-      
     }
-    .Ethan:hover{
+
+    .Ethan:hover {
       border: solid white 0.1px;
       opacity: 0.6;
     }
+
     .centered {
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    font-family: arial;
-    font-size: 50px;
-}
-   .fluid-2 {
-    position: absolute;
-    left:0%;
-    top:0%;
-    text-align: center;
-    color: white;
-}
-.img1 {
-  width: 100%;
-  height: auto;
-  opacity: 0.5;
-}
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: arial;
+      font-size: 50px;
+    }
+
+    .fluid-2 {
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      text-align: center;
+      color: white;
+    }
+
+    .img1 {
+      width: 100%;
+      height: auto;
+      opacity: 0.5;
+    }
+
     .border {
       border-radius: 100px;
       width: 30%;
@@ -84,6 +87,7 @@
       text-align: center;
       background: linear-gradient(gainsboro, silver) !important;
     }
+
     .width-go-to1:hover {
       background: linear-gradient(silver, grey) !important;
     }
@@ -101,6 +105,7 @@
       color: white;
       text-align: right;
     }
+
     ul {
       list-style-type: none;
     }
@@ -113,127 +118,236 @@
     .btn {
       color: black;
     }
-    .white-nav-item{
+
+    .white-nav-item {
       color: white !important;
       padding: 3px;
       margin-left: 2px;
     }
-    .white-nav-item:hover{
+
+    .white-nav-item:hover {
       background: grey !important;
       color: black !important;
     }
-    .white-nav-item:active{
+
+    .white-nav-item:active {
       background: grey !important;
       color: black !important;
     }
+
     .dropbtn {
-    border: none;
-    cursor: pointer;
-    color: black;
+      border: none;
+      cursor: pointer;
+      color: black;
     }
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(163, 163, 163);
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgb(163, 163, 163);
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
 
-.show {display:block;}
-  .dropHover:hover{
-background: silver !important;
-  }
-  .navbar-toggle{
-  background: silver !important;
-  border:solid 0px !important;  
-  }
-  .navbar-toggle:hover{
-  background: darkgray !important;  
-  }
-  .navbar-toggle:active{
-    background: dimgrey !important;
-  }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
 
+    .show {
+      display: block;
+    }
 
+    .dropHover:hover {
+      background: silver !important;
+    }
 
-</style>
+    .navbar-toggle {
+      background: silver !important;
+      border: solid 0px !important;
+    }
+
+    .navbar-toggle:hover {
+      background: darkgray !important;
+    }
+
+    .navbar-toggle:active {
+      background: dimgrey !important;
+    }
+
+    .wrap {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .task-list {
+      width: 88%;
+      min-height: 300px;
+      background: #fff;
+      box-shadow: 2px 2px 0px #ddd;
+      margin-top: 40px;
+      padding: 22px 6%;
+    }
+
+    .task-list li {
+      font-size: 1.2em;
+      padding: 8px 0;
+      overflow: hidden;
+    }
+
+    .task-list li span {
+      width: 86%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      float: left;
+    }
+
+    .task-list li .delete-button {
+      position: relative;
+      top: -6px;
+      height: auto;
+      padding-top: 7px;
+      float: right;
+      vertical-align: top;
+      opacity: 0.5;
+      font-size: 12px;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+
+    .task-list li .delete-button:hover {
+      opacity: 0.85;
+    }
+
+    .add-new-task {
+      margin-top: 20px;
+      padding-bottom: 60px;
+    }
+
+    .add-new-task input[type='text'] {
+      width: 100%;
+      font: normal 1.2em 'Open Sans', Arial, sans-serif;
+      color: #999;
+      box-shadow: 2px 2px 0px #ddd;
+      border: none;
+      border-radius: none;
+      display: block;
+      padding: 12px 6%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    :focus {
+      outline: 0;
+    }
+
+    @media all and (max-width: 425px) {
+      .wrap {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-brand">
+    <div class="navbar-brand">
       <img onclick="reloadPage()" class="Ethan" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1286460/profile/profile-512.jpg?1515871963">
     </div>
 
 
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-            aria-expanded="false">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+        aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      
 
-        </div>
-    
 
-    
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    </div>
 
-          <ul class="nav navbar-nav">
-            <li><a class="white-nav-item" href="#profile">PROFILE</a>
-            </li>
-            <li><a class="white-nav-item" href="#about">ABOUT</a>
-            </li>
-            <li><a class="white-nav-item" href="#edu">EDUCATION</a></li>
-            <li><a class="white-nav-item" href="#contact">CONTACT</a></li>
-              <li>
-<a onclick="myFunction()" class="dropbtn white-nav-item">PROJECTS</a>
-  <div id="myDropdown" class="dropdown-content">
-    <a class="dropHover" href="https://codepen.io/ethannorman/full/EoVEPW/">Yule 2017</a>
-  </div></li>
-  <li>
-     <a href="page2.html" target="_self">Page2</a>
 
-    </li>
-          </ul>
-          <form class="navbar-form navbar-left">
 
-          </form>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </nav>
-        <div class="container">
-  
-  <form  action="#">
-    <input type="text" name="item" id="item" placeholder="Add New" />
-</form>  
-<ul id="list"></ul>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-</div>
+      <ul class="nav navbar-nav">
+        <li><a class="white-nav-item" href="#profile">PROFILE</a>
+        </li>
+        <li><a class="white-nav-item" href="#about">ABOUT</a>
+        </li>
+        <li><a class="white-nav-item" href="#edu">EDUCATION</a></li>
+        <li><a class="white-nav-item" href="#contact">CONTACT</a></li>
+        <li>
+          <a onclick="myFunction()" class="dropbtn white-nav-item">PROJECTS</a>
+          <div id="myDropdown" class="dropdown-content">
+            <a class="dropHover" href="https://codepen.io/ethannorman/full/EoVEPW/">Yule 2017</a>
+          </div>
+        </li>
+        <li>
+          <a href="page2.html" target="_self">Page2</a>
 
-        <!-- jQuery ref (necessary for Bootstrap's JavaScript plugins) -->
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+  <div class="wrap">
+    <div class="task-list">
+      <ul>
+        <li>
+          <span>Walk the dog</span>
+          <button id="1" class="delete-button">X</button>
+        </li>
+        <li>
+          <span>Pickup eggs from the store</span>
+          <button id="2" class="delete-button">X</button>
+        </li>
+        <li>
+          <span>Respond to emails</span>
+          <button id="3" class="delete-button">X</button>
+        </li>
+        <li>
+          <span>Go to the dentist</span>
+          <button id="4" class="delete-button">X</button>
+        </li>
+        <li>
+          <span>Research fishing lures</span>
+          <button id="5" class="delete-button">X</button>
+        </li>
+      </ul>
+    </div>
+    <form class="add-new-task" autocomplete="off">
+      <input type="text" name="new-task" placeholder="Add a new item..." />
+    </form>
+  </div>
+
+  <!-- jQuery ref (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
@@ -242,68 +356,56 @@ background: silver !important;
 </body>
 <!-- Java Script & JQuery -->
 <script>
- 
   /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function myFunction() {
+  function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
-}
+  }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
       }
     }
   }
-}
-(function(){
-  
-  var list = document.querySelector('#list'),
-      form = document.querySelector('form'),
-      item = document.querySelector('#item');
-  
-  form.addEventListener('submit',function(e){
-    e.preventDefault();
-    list.innerHTML += '<li>' + item.value + '</li>';
-    store();
-    item.value = "";
-  },false)
-  
-  list.addEventListener('click',function(e){
-    var t = e.target;
-    if(t.classList.contains('checked')){
-      t.parentNode.removeChild(t);
-    } else {
-      t.classList.add('checked');
-    }
-    store();
-  },false)
-  
-  function store() {
-    window.localStorage.myitems = list.innerHTML;
+  var count = 5;
+
+  add_task(); // Call the add_task function
+  delete_task(); // Call the delete_task function
+
+  function add_task() {
+
+    $('.add-new-task').submit(function () {
+      var new_task = $('.add-new-task input[name=new-task]').val();
+      count = count + 1;
+
+      var print = '<li><span>' + new_task + '</span><button id="' + count + '" class="delete-button">X</button></li>';
+
+      if (new_task !== '') {
+        $('.add-new-task input[name=new-task]').val('');
+        $(print).appendTo('.task-list ul').hide().fadeIn();
+        delete_task();
+      }
+      return false;
+    });
   }
-  
-  function getValues() {
-    var storedValues = window.localStorage.myitems;
-    if(!storedValues) {
-      list.innerHTML = '<li>Make a to do list</li>'+
-'<li>Check off first thing on the to do list</li>'+
-'<li>Realize you have already accomplished 2 things in the list</li>'+
-'<li>Reward yourself with a nap</li>';
-    }
-    else {
-      list.innerHTML = storedValues;
-    }
+
+  function delete_task() {
+    $('.delete-button').click(function () {
+      var current_element = $(this);
+      var id = $(this).attr('id');
+      current_element.parent().fadeOut("fast", function () { $(this).remove(); });
+    });
   }
-  getValues();
-})();
+
 </script>
 
 </html>
