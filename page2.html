@@ -168,18 +168,15 @@ background: silver !important;
     background: dimgrey !important;
   }
 /* Include the padding and border in an element's total width and height */
-* {
-box-sizing: border-box;
-}
 
 /* Remove margins and padding from the list */
-ul {
+.unordlist {
 margin: 0;
 padding: 0;
 }
 
 /* Style the list items */
-ul li {
+unordlist li {
 cursor: pointer;
 position: relative;
 padding: 12px 8px 12px 40px;
@@ -193,24 +190,24 @@ user-select: none;
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
+.unordlist li:nth-child(odd) {
 background: #f9f9f9;
 }
 
 /* Darker background-color on hover */
-ul li:hover {
+.unordlist li:hover {
   background: #ddd;
 }
 
 /* When clicked on, add a background color and strike out text */
-ul li.checked {
+.unordlist li.checked {
 background: #888;
  color: #fff;
 text-decoration: line-through;
 }
 
 /* Add a "checked" mark when clicked on */
-ul li.checked::before {
+.unordlist li.checked::before {
 content: '';
 position: absolute;
 border-color: #fff;
@@ -339,7 +336,7 @@ background-color: #bbb;
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
 
-<ul id="myUL">
+<ul class="unordlist" id="myUL">
   <li>Hit the gym</li>
   <li class="checked">Pay bills</li>
   <li>Meet George</li>
