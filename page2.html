@@ -337,12 +337,12 @@ background-color: #bbb;
 </div>
 
 <ul class="unordlist" id="myUL">
-  <li>Hit the gym</li>
-  <li class="checked">Pay bills</li>
-  <li>Meet George</li>
-  <li>Buy eggs</li>
-  <li>Read a book</li>
-  <li>Organize office</li>
+  <li id="checkItem">Hit the gym</li>
+  <li  class="checked">Pay bills</li>
+  <li id="checkItem">Meet George</li>
+  <li id="checkItem">Buy eggs</li>
+  <li id="checkItem">Read a book</li>
+  <li id="checkItem">Organize office</li>
 </ul> 
       </div>
 
@@ -380,7 +380,7 @@ function reloadPage() {
   location.reload(true);
 }
 // Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
+var myNodelist = document.getElementsById("ceckItem");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
