@@ -170,6 +170,19 @@ background: silver !important;
     right: 0;
     bottom: 0;
   }
+  .parallax {
+    /* The image used */
+    background-image: url('img_parallax.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
   </style>
 </head>
 
@@ -226,10 +239,15 @@ background: silver !important;
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-      <div class="fluid-2">
-<img class="img1" src="https://public-media.smithsonianmag.com/filer/78/93/7893029e-19ca-490a-a698-98ec804c7b97/istock-831508784.jpg">
-  <h3 class="centered">Welcome!</h3>
+      <div class="parallax"></div>
+
+<div style="height:1000px;background-color:red;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
 </div>
+
+<div class="parallax"></div>
 
 
  
