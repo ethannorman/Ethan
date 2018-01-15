@@ -329,7 +329,6 @@ background-color: #bbb;
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-      <div class="fluid-2 jumbotron">
         <div id="myDIV" class="header">
   <h2>My To Do List</h2>
   <input type="text" id="myInput" placeholder="Title...">
@@ -343,8 +342,7 @@ background-color: #bbb;
   <li id="checkItem">Buy eggs</li>
   <li id="checkItem">Read a book</li>
   <li id="checkItem">Organize office</li>
-</ul> 
-      </div>
+</ul>
 
         <!-- jQuery ref (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -401,7 +399,7 @@ for (i = 0; i < close.length; i++) {
 }
 
 // Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
+var list = document.querySelector('unordlist');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
     ev.target.classList.toggle('checked');
