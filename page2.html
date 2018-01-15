@@ -244,7 +244,7 @@
       border-radius: none;
       padding: 12px 4%;
       box-sizing: border-box;
-      background: rgb(200, 200, 200)
+      background: rgb(200, 200, 200);
     }
 
     :focus {
@@ -259,7 +259,9 @@
     }
     .list-title{
       text-align: center;
-      color: grey;
+      color: rgb(200, 200, 200);
+      text-decoration: underline;
+
     }
     .field-container{
       text-align: center;
@@ -306,7 +308,7 @@
           </div>
         </li>
         <li>
-          <a href="page2.html" target="_self">Page2</a>
+          <a href="page2.html" target="_self">PAGE2</a>
 
         </li>
       </ul>
@@ -322,7 +324,7 @@
   </nav>
   <div class="wrap">
     <div class="task-list">
-      <h1 class="list-title">My Task List</h1>
+      <h1 class="list-title">My Tasks</h1>
       <ul>
         <li>
           <span></span>
@@ -382,7 +384,7 @@ toggle between hiding and showing the dropdown content */
       }
     }
   }
-  var count = 5;
+  var count = 0;
 
   add_task(); // Call the add_task function
   delete_task(); // Call the delete_task function
