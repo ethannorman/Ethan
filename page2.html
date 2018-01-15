@@ -329,20 +329,14 @@ background-color: #bbb;
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-        <div id="myDIV" class="header">
-  <h2>My To Do List</h2>
-  <input type="text" id="myInput" placeholder="Title...">
-  <span onclick="newElement()" class="addBtn">Add</span>
-</div>
+        <div class="container">
+  
+  <form  action="#">
+    <input type="text" name="item" id="item" placeholder="Add New" />
+</form>  
+<ul id="list"></ul>
 
-<ul class="unordlist" id="myUL">
-  <li id="checkItem">Hit the gym</li>
-  <li  class="checked">Pay bills</li>
-  <li id="checkItem">Meet George</li>
-  <li id="checkItem">Buy eggs</li>
-  <li id="checkItem">Read a book</li>
-  <li id="checkItem">Organize office</li>
-</ul>
+</div>
 
         <!-- jQuery ref (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -377,61 +371,47 @@ window.onclick = function(event) {
 function reloadPage() {
   location.reload(true);
 }
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsById("ceckItem");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
-
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
-
-// Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('unordlist');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
-
-// Create a new list item when clicking on the "Add" button
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myUL").appendChild(li);
-  }
-  document.getElementById("myInput").value = "";
-
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-} 
+(function(){
+  
+  var list = document.querySelector('#list'),
+      form = document.querySelector('form'),
+      item = document.querySelector('#item');
+  
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    list.innerHTML += '<li>' + item.value + '</li>';
+    store();
+    item.value = "";
+  },false)
+  
+  list.addEventListener('click',function(e){
+    var t = e.target;
+    if(t.classList.contains('checked')){
+      t.parentNode.removeChild(t);
+    } else {
+      t.classList.add('checked');
+    }
+    store();
+  },false)
+  
+  function store() {
+    window.localStorage.myitems = list.innerHTML;
+  }
+  
+  function getValues() {
+    var storedValues = window.localStorage.myitems;
+    if(!storedValues) {
+      list.innerHTML = '<li>Make a to do list</li>'+
+                       '<li>Check off first thing on the to do list</li>'+
+                       '<li>Realize you have already accomplished 2 things in the list</li>'+
+                       '<li>Reward yourself with a nap</li>';
+    }
+    else {
+      list.innerHTML = storedValues;
+    }
+  }
+  getValues();
+})();
 </script>
 
 </html>
