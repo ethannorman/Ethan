@@ -21,11 +21,89 @@
 <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
   <!-- Css -->
   <style>
-
+.navbar-inverse {
+      transition: 0.3s;
+      background: rgba(120, 120, 120, 0.8) !important;
+    }
+.white-nav-item{
+      color: white !important;
+      padding: 3px;
+      margin-left: 2px;
+    }
+    .white-nav-item:hover{
+      background: green !important;
+      color: white !important;
+    }
+    .white-nav-item:active{
+      background: darkgreen !important;
+      color: white !important;
+    }
+    .navbar-toggle{
+  background: silver !important;
+  border:solid 0px !important;  
+  }
+  .navbar-toggle:hover{
+  background: darkgray !important;  
+  }
+  .navbar-toggle:active{
+    background: dimgrey !important;
+  }
 </style>
 </head>
 <body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-brand">
+      
+    </div>
 
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+
+        </div>
+    
+
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav">
+            <li><a class="white-nav-item" href="#home">HOME</a>
+            </li>
+            <li><a class="white-nav-item" href="#about">ABOUT</a>
+            </li>
+            <li><a class="white-nav-item" href="#edu">EDUCATION</a></li>
+            <li><a class="white-nav-item" href="#contact">CONTACT</a></li>
+              <li>
+<a onclick="myFunction()" class="dropbtn white-nav-item">PROJECTS</a>
+  <div id="myDropdown" class="dropdown-content">
+    <a class="dropHover" href="https://codepen.io/ethannorman/full/EoVEPW/">Yule 2017</a>
+    <a class="dropHover" href="poem1.html" target="_self">Poem#1</a>
+    <a class="dropHover" href="herbs&crystals.html" target="_self">Herbs and Crystals</a>
+  </div></li>
+  <li>
+     <a class="white-nav-item" href="page2.html" target="_self">UTILITIES</a>
+
+    </li>
+          </ul>
+          <form class="navbar-form navbar-left">
+
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
 </body>
 
 <html>
