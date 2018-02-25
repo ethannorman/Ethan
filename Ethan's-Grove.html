@@ -38,27 +38,6 @@
       color: black !important;
       padding: 3px;
       margin-left: 2px;
-      text-decoration:none;
-display: inline-block;
-color:black;
-}
-/* add a empty string after the elment with class .slide-left-right */
-.slide-left-right:after 
-{
-content: '';
-display: block;
-height: 3px;
-width: 0;
-background: transparent;
-transition: width .5s ease, background-color .5s ease; /* .5 seonds for changes to the width and background-color */
--webkit-transition: width .5s ease, background-color .5s ease; /* Chrome and Safari */
--moz-transition: width .5s ease, background-color .5s ease; /* FireFox */
-}
-/* Change the width and background on hover, aka sliding out */
-.slide-left-right:hover:after 
-{
-width: 100%;
-background: black;
 }
     .navbar-toggle{
   border:solid 0px !important;  
@@ -192,6 +171,79 @@ position: relative;
   from{ bottom:-100px; opacity:0 } 
   to{ bottom:0; opacity:1 }
 }
+@-webkit-keyframes hvr-back-pulse {
+
+  50% {
+
+    background-color: rgba(32, 152, 209, 0.75);
+
+  }
+
+}
+
+@keyframes hvr-back-pulse {
+
+  50% {
+
+    background-color: rgba(32, 152, 209, 0.75);
+
+  }
+
+}
+
+.hvr-back-pulse {
+
+  display: inline-block;
+
+  vertical-align: middle;
+
+  -webkit-transform: perspective(1px) translateZ(0);
+
+  transform: perspective(1px) translateZ(0);
+
+  box-shadow: 0 0 1px transparent;
+
+  overflow: hidden;
+
+  -webkit-transition-duration: 0.5s;
+
+  transition-duration: 0.5s;
+
+  -webkit-transition-property: color, background-color;
+
+  transition-property: color, background-color;
+
+}
+
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+
+  -webkit-animation-name: hvr-back-pulse;
+
+  animation-name: hvr-back-pulse;
+
+  -webkit-animation-duration: 1s;
+
+  animation-duration: 1s;
+
+  -webkit-animation-delay: 0.5s;
+
+  animation-delay: 0.5s;
+
+  -webkit-animation-timing-function: linear;
+
+  animation-timing-function: linear;
+
+  -webkit-animation-iteration-count: infinite;
+
+  animation-iteration-count: infinite;
+
+  background-color: #2098D1;
+
+  background-color: #2098d1;
+
+  color: white;
+
+}
 </style>
 </head>
 <body>
@@ -302,6 +354,8 @@ position: relative;
 </table>
       </div>
       </div>
+    <a class="hvr-back-pulse">ll
+    </a>
 
       <!-- jQuery ref (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
