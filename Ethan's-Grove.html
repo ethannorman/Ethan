@@ -42,13 +42,23 @@
     .white-nav-item:hover{
       background: rgba(90, 110, 0, 0.8) !important;
       color: white !important;
-      text-decoration: underline !important;
-      -moz-text-decoration-color: red !important;
-      transition: 0.2s;
     }
     .white-nav-item:active{
       background: rgba(65, 85, 0, 0.8) !important;
       color: white !important;
+    }
+    .white-nav-item:before{
+      
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+    }
+    .white-nav-item:hover:before{
+      visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
     }
     .navbar-toggle{
   border:solid 0px !important;  
