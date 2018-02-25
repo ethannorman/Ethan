@@ -242,6 +242,79 @@ position: relative;
 
 
 }
+@-webkit-keyframes hvr-push {
+
+  50% {
+
+    -webkit-transform: scale(0.8);
+
+    transform: scale(0.8);
+
+  }
+
+  100% {
+
+    -webkit-transform: scale(1);
+
+    transform: scale(1);
+
+  }
+
+}
+
+@keyframes hvr-push {
+
+  50% {
+
+    -webkit-transform: scale(0.8);
+
+    transform: scale(0.8);
+
+  }
+
+  100% {
+
+    -webkit-transform: scale(1);
+
+    transform: scale(1);
+
+  }
+
+}
+
+.hvr-push {
+
+  display: inline-block;
+
+  vertical-align: middle;
+
+  -webkit-transform: perspective(1px) translateZ(0);
+
+  transform: perspective(1px) translateZ(0);
+
+  box-shadow: 0 0 1px transparent;
+
+}
+
+.hvr-push:active {
+
+  -webkit-animation-name: hvr-push;
+
+  animation-name: hvr-push;
+
+  -webkit-animation-duration: 0.3s;
+
+  animation-duration: 0.3s;
+
+  -webkit-animation-timing-function: linear;
+
+  animation-timing-function: linear;
+
+  -webkit-animation-iteration-count: 1;
+
+  animation-iteration-count: 1;
+
+}
 </style>
 </head>
 <body>
@@ -270,12 +343,12 @@ position: relative;
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
           <ul class="nav navbar-nav">
-            <li><a class="hvr-back-pulse smoothScroll white-nav-item" href="#home">Home</a>
+            <li><a class="hvr-push hvr-back-pulse smoothScroll white-nav-item" href="#home">Home</a>
             </li>
-            <li><a class="hvr-back-pulse smoothScroll white-nav-item" href="#about">About</a>
+            <li><a class="hvr-push hvr-back-pulse smoothScroll white-nav-item" href="#about">About</a>
             </li>
-            <li><a class="hvr-back-pulse smoothScroll white-nav-item" href="#herbs">Herbs</a></li>
-            <li><a class="hvr-back-pulse smoothScroll white-nav-item" href="#crystals">Crystals</a></li>
+            <li><a class="hvr-push hvr-back-pulse smoothScroll white-nav-item" href="#herbs">Herbs</a></li>
+            <li><a class="hvr-push hvr-back-pulse smoothScroll white-nav-item" href="#crystals">Crystals</a></li>
           </ul>
           <form class="navbar-form navbar-left">
 
