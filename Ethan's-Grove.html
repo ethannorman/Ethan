@@ -157,6 +157,23 @@ height: 40px;
 .tigers-eye{
 height: 40px;
 }
+.animate-bottom{
+position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 2s;
+  animation-name: animatebottom;
+  animation-duration: 2s;
+    transition-timing-function: ease;
+}
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
 </style>
 </head>
 <body>
@@ -202,6 +219,7 @@ height: 40px;
         </div>
         <!-- /.navbar-collapse -->
     </nav>
+      <div style="display:none;" id="myDiv" class="animate-bottom">
       <div id="home" class=" jumbotron jumbotron-1">
         <h1 class="title">Welcome Visitor!</h1>
         <h2 class="subtitle">Take a look around!</h2>
@@ -265,6 +283,7 @@ height: 40px;
     </tr>
 </table>
       </div>
+      </div>
 
       <!-- jQuery ref (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -273,5 +292,7 @@ height: 40px;
     crossorigin="anonymous"></script>
 
 </body>
+<script>
 
+  </script>
 <html>
