@@ -7,11 +7,174 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <!-- Font Awesome Plugin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- AlmendraSC Font Plugin -->
+    <link href="https://fonts.googleapis.com/css?family=Almendra+SC" rel="stylesheet"> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <title>RWBY Info</title>
+    <style>
+body{
+}
+.card-rwby-logo{
+ background: black;
+  border-radius: 0px;
+}
+#navbar{
+  background: cornsilk !important;
+  
+}
+.rwby-home-pic{
+  height:auto;
+  width: 30px;
+}
+.figure{
+  text-align: center;
+}
+.navbar-brand{
+  font-family: 'Almendra SC';
+  color: rgb(160, 0, 0) !important;
+  
+}
+.nav-link{
+  font-family: 'Almendra SC';
+  color: black !important;
+  
+}
+.nav-link:hover{
+  color: black !important;
+}
+.nav-link:active{
+  color: rgb(200, 0 ,0) !important;
+}
+.dropdown-menu{
+ background: rgb(150,0,0);
+  padding: 0px;
+  border-radius: 0px;
+}
+.dropdown-item{
+ font-family: 'Almendra SC';
+  color: white;
+}
+.dropdown-item:hover{
+  background: none;
+  color: grey;
+}
+.dropdown-item:active{
+  color: rgb(200, 0, 0) !important;
+}
+.form-control{
+  font-family: 'Almendra SC';
+  border-radius: 0px;
+  background: rgb(237, 237 ,237) !important;
+}
+.ruby-rose{
+  height: 20px;
+}
+.weiss-logo{
+  height: 20px;
+}
+.blake-logo{
+  height: 20px;
+}
+.yang-logo{
+  height: 20px;
+}
+.btn-red{
+  background: rgb(150,0,0);
+  color: white;
+  border-radius: 0px;
+}
+btn-red:active{
+ background: red; 
+}
+.sticky{
+ position: fixed;
+  left: 0;
+  right:0;
+  top: 0;
+  z-index: 1;
+}
+.about{
+margin-bottom: 4000px;  
+}
+.navbar-toggler{
+  background: rgb(160, 0, 20);
+}
+.fa-chevron-down{
+  color: white !important;
+  font-size: 23px;
+}
+.fa-chevron-up{
+  color: white !important;
+  font-size: 23px;
+}
+.navbar-collapse{
+ 
+}
+        </style>
   </head>
   <body>
+      <div id="home" class="card card-rwby-logo text-center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/RWBY_logo_red.png" class="img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
+  </div>
+<nav id="navbar" class="navbar menu navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Rwby Info</a>
+  <div class="nav-item">
+  <img class=" ruby-rose" src="https://i.pinimg.com/originals/a1/26/e9/a126e9068d348237b17bbee4ee659363.png">
+  <img class="weiss-logo" src="https://i.pinimg.com/originals/a2/69/da/a269da116456873972ff774a4d177176.png">
+    <img class="blake-logo" src="https://vignette.wikia.nocookie.net/rwby/images/2/2a/Blake_emblem_trans.png/revision/latest?cb=20140810194746">
+    <img class="yang-logo" src="https://vignette.wikia.nocookie.net/rwby/images/0/03/Yang_Xiao_Long_Emblem.svg/revision/latest/scale-to-width-down/600?cb=20150103071937">
+  </div>
+  
+  <button class="navbar-toggler fa fa-chevron-down" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" target="home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Main Characters
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Ruby Rose</a>
+          
+          <a class="dropdown-item" href="#">Weiss</a>
+          
+          <a class="dropdown-item" href="#">Blake</a>
+          
+          <a class="dropdown-item" href="#">Yang Rose</a>
+            
+        </div>
+      </li>
       
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-red my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="card about">
+  l
+</div>
+
+  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
