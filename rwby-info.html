@@ -147,13 +147,13 @@ table, th, td {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link smooth-scroll" href="#home">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#about-section">About</a>
+        <a class="nav-link smooth-scroll" href="#about-section">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#character-sheet">
+        <a class="nav-link smooth-scroll" href="#character-sheet">
           Main Characters
         </a>
       </li>
@@ -168,7 +168,7 @@ table, th, td {
 </nav>
 <div class="card about">
     <h1 id="about-section">About</h1>
-  <p>RWBY was created by Monty Oum for <a href="https://en.wikipedia.org/wiki/Rooster_Teeth" target="_blank">Rooster Teeth</a></p> 
+  <p>RWBY was created by Monty Oum for <a href="https://en.wikipedia.org/wiki/Rooster_Teeth" target="_self">Rooster Teeth</a>.</p> 
 </div>
 <div id="character-sheet" class="card">
 <table>
@@ -266,7 +266,7 @@ $(function () {
         $(this).toggleClass("fa fa-chevron-down fa fa-chevron-up");
 });
 });
-$('a').click(function(e){
+$('.smooth-scroll').click(function(e){
     e.preventDefault();
     $('body, html').animate({
         scrollTop: $( $(this).attr('href') ).offset().top - 90
