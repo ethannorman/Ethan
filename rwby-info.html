@@ -262,5 +262,11 @@ $(function () {
         $(this).toggleClass("fa fa-chevron-down fa fa-chevron-up");
 });
 });
+$('a').click(function(e){
+    e.preventDefault();
+    $('body, html').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top - 90
+    }, 1000);
+});
     </script>
 </html>
