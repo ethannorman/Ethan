@@ -141,6 +141,22 @@ background: linear-gradient(gray, rgb(55,55 ,55 ));
 color: white;
 
 }
+.animation{
+  animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
         </style>
   </head>
   <body>
@@ -186,7 +202,9 @@ color: white;
   <p>RWBY was created by Monty Oum for <a href="https://roosterteeth.com/" target="_blank">Rooster Teeth</a>.</p>
   <p>Ruby Rose, Weiss Schnee, Blake Belladonna, Yang Xiao Long, and other huntsmen and huntresses attend Beacon to fight the creatures of Grimm and other villians who seek power. 
       There are teams of four people, each led by one of the four, who take on different missions to protect the kingdoms of Reminant.</p>
+<div class="animation">
 </div>
+    </div>
 <div id="character-sheet" class="card">
 <table class="table-1" >
   <tr>
